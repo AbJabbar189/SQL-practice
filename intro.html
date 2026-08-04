@@ -1,0 +1,64 @@
+/*
+================================================================================
+CHAPTER: Introduction to SQL (SQL Ka Taaruf)
+================================================================================
+SQL (Structured Query Language) databases ko access karne aur un ke data ko 
+manage (manipulate) karne ki ek standard (bain-al-aqwami) zaban hai.
+
+- SQL 1986 mein ANSI aur 1987 mein ISO ka official standard bana.
+*/
+
+-- =============================================================================
+-- 1. What Can SQL Do? (SQL Kya Kya Kar Sakti Hai?):
+-- =============================================================================
+-- 1. Database par Queries chala sakti hai.
+-- 2. Database se Data haasil (Retrieve) kar sakti hai.
+-- 3. Naye Records daakhil (Insert) kar sakti hai.
+-- 4. Purane Records ko Tabdeel (Update) kar sakti hai.
+-- 5. Data ko Mita (Delete) sakti hai.
+-- 6. Naya Database aur naye Tables bana sakti hai.
+-- 7. Stored Procedures aur Views bana sakti hai.
+-- 8. Users ko Permissions (ijazat) de sakti hai.
+
+-- =============================================================================
+-- 2. SQL Version Standard Note:
+-- =============================================================================
+/*
+Agarche SQL ek ANSI/ISO standard hai, lekin is ke alag alag versions hain 
+(jaise MySQL, SQL Server, PostgreSQL, MS Access). 
+
+Lekin tamam systems mein bunyadi commands bilkul ek jaisi hoti hain:
+SELECT, UPDATE, DELETE, INSERT, WHERE.
+*/
+
+-- =============================================================================
+-- 3. Using SQL in Your Web Site (Website Mein SQL Ka Istemal):
+-- =============================================================================
+/*
+Ek aisi website banane ke liye jo database se data dikhaye, aap ko 4 cheezon ki zaroorat hoti hai:
+
+1. RDBMS Database Software (jaise MySQL, MS Access, SQL Server).
+2. Server-Side Language (jaise PHP, Python, ya Node.js).
+3. SQL (Data ko database se nikalne ya save karne ke liye).
+4. HTML / CSS (Website par data ko khubsurat tarike se dikhane ke liye).
+*/
+
+-- =============================================================================
+-- 4. What is RDBMS? (Relational Database Management System):
+-- =============================================================================
+/*
+RDBMS ka matlab hai Relational Database Management System.
+Tamam modern database systems (MS Access, MySQL, SQL Server, Oracle) RDBMS par mabni hain.
+
+RDBMS mein data TABLES ki shakal mein save hota hai.
+- Table: Related data ka aik majmua (collection).
+- Columns (Vertical): Attributes ya fields (e.g., CustomerID, Name, City).
+- Rows / Records (Horizontal): Har ek individual entry (e.g., ek specific customer ki poori maloomat).
+*/
+
+-- =============================================================================
+-- Basic SQL Command Example:
+-- =============================================================================
+-- Customers naam ke table se saara data nikalne ki query:
+
+SELECT * FROM Customers;
